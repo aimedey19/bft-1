@@ -784,7 +784,7 @@ max-height:100%;
 }
 
 .callback-form .contact-form input {
-	border-radius: 20px;
+	border-radius: 5px;
 	height: 40px;
 	line-height: 40px;
 	display: inline-block;
@@ -804,7 +804,7 @@ max-height:100%;
 }
 
 .callback-form .contact-form textarea {
-	border-radius: 20px;
+	border-radius: 5px;
 	height: 120px;
 	max-height: 200px;
 	min-height: 120px;
