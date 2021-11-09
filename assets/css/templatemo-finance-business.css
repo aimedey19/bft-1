@@ -411,16 +411,23 @@ header .navbar {
 	height:95vh;
 }
 
+.overslide{
+	background-color: rgba(0, 0, 0, 0.583);
+	z-index: 2;
+	overflow: hidden;
+	height: 100%;
+}
+
 .Modern-Slider .item-1 .img-fill {
-	background-image: url(../images/slide_01.jpg);
+	background-image: url(../images/hero-1.jpg);
 }
 
 .Modern-Slider .item-2 .img-fill {
-	background-image: url(../images/slide_02.jpg);
+	background-image: url(../images/hero-2.jpg);
 }
 
 .Modern-Slider .item-3 .img-fill {
-	background-image: url(../images/slide_03.jpg);
+	background-image: url(../images/hero-3.jpg);
 }
 
 .Modern-Slider .NextArrow{
@@ -614,6 +621,7 @@ ul.slick-dots {
 	background-size: cover;
 	background-attachment: fixed;
 	padding: 140px 0 0 0;
+	margin-bottom: 100px;
 	color: #000;
 }
 
@@ -671,6 +679,49 @@ ul.slick-dots {
     font-weight: 700;
     font-size: 36px;
 }
+
+.count-digit {
+    margin: 5px 0px;
+    color: #2d3235;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.count-digit-area-content {
+	text-align: center;
+	background-color:rgb(255, 255, 255);
+	padding: 25px 30px 25px 30px;
+	margin: 15px 0px;
+	box-shadow: 3px 4px 8px 1px rgba(31,31,31,0.3);
+	-webkit-box-shadow: 3px 4px 8px 1px rgba(31,31,31,0.3);
+	-moz-box-shadow: 3px 4px 8px 1px rgba(31,31,31,0.3);
+}
+
+.count-digit-area-content i{
+	position: absolute;
+	top: -12px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 20px;
+	background: #88bf48;
+	padding: 12px;
+	color: #fff;
+	border-radius: 50px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	line-height: 0;
+	width: 48px;
+	height: 48px;
+}
+
+.count-digit-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2d3235;
+    letter-spacing: 0.5px;
+}
+
 .count-title {
     font-size: 20px;
     font-weight: 600;
