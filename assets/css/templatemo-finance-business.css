@@ -439,15 +439,15 @@ header .navbar {
   text-align:center;
   font-size: 36px;
   font-family: 'FontAwesome';
-  color:#FFF;
+  color:#ffffff95;
   z-index:5;
   outline: none;
   cursor: pointer;
 }
 
-.Modern-Slider .NextArrow:before{
+/* .Modern-Slider .NextArrow:before{
   content:'\f105';
-}
+} */
 
 .Modern-Slider .PrevArrow {
   position:absolute;
@@ -458,15 +458,15 @@ header .navbar {
   text-align:center;
   font-size: 36px;
   font-family: 'FontAwesome';
-  color:#FFF;
+  color:#ffffff95;
   z-index:5;
   outline: none;
   cursor: pointer;
 }
 
-.Modern-Slider .PrevArrow:before{
+/* .Modern-Slider .PrevArrow:before{
   content:'\f104';
-}
+} */
 
 ul.slick-dots {
   display: none!important;
