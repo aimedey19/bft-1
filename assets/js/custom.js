@@ -105,8 +105,8 @@ jQuery( document ).ready(function( $ ) {
             cssEase:'linear',
            // fade:true,
             draggable:false,
-            prevArrow:'<button class="PrevArrow"></button>',
-            nextArrow:'<button class="NextArrow"></button>', 
+            prevArrow:'<button class="PrevArrow"><i class="fas fa-chevron-left"></i></button>',
+            nextArrow:'<button class="NextArrow"><i class="fas fa-chevron-right"></i></button>', 
         });
 
         function visible(partial) {
