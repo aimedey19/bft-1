@@ -805,7 +805,7 @@ max-height:100%;
 .testimonials {
 	margin-top: 100px;
 	background-color: #f7f7f7;
-	padding: 100px 0px;
+	padding-top: 100px;
 }
 .testimonial-item .inner-content {
 	text-align: center;
