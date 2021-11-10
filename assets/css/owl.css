@@ -28,11 +28,15 @@
     height: 0; }
   .owl-carousel .owl-stage-outer {
     position: relative;
+    overflow:hidden;
     /* fix for flashing background */
-    -webkit-transform: translate3d(0px, 0px, 0px); }
+    -webkit-transform: translate3d(-10px, 0px, 0px); }
   .owl-carousel .owl-wrapper,
   .owl-carousel .owl-item {
     margin-right: 15px;
+    margin-left: 15px;
+    background-color: #fff;
+    padding: 2px 2px;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
