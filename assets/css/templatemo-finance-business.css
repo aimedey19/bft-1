@@ -1699,6 +1699,10 @@ clear: both;
 /**************************SIDEBAR COLLAPSE ON MOBILE DEVICES******************************************************/
 /***********************************************************************************************************************/
 
+	.dropdown-toggle::after {
+		content: none !important;
+	}
+
 	.sidebar {
 	  height: 100%;
 	  width: 0;
@@ -1712,17 +1716,30 @@ clear: both;
 	  top: 0; right: 0; bottom: 0; left: 0;
 	}
 	
-	.sidebar p a {
-	  padding: 5px 5px 5px 10px;
+	.sidebar p a,  .sidebar div {
+	  padding: 15px 20px;
 	  text-decoration: none;
 	  font-size: 16px;
 	  font-weight: 600;
 	  color: #000;
-	  display: block;
 	  transition: 0.3s;
-	  min-width: 270px;
-	  border-bottom: 1px solid rgba(119, 117, 117, 0.18);
 	}
+
+	#sidebar-drop-content li{
+		margin: 15px 0;
+		font-size: 14px;
+	}
+
+	#sidebar-drop-content li a{
+		color: #508016 ;
+	}
+
+	.sidebar .dropdown::after {
+		content: '>';
+		position: absolute;
+		font-size: 16px;
+		right: 10px;
+	  }
 
 	.sidebar .subcategories a {
 	  padding: 5px 5px 5px 10px;
@@ -1758,7 +1775,7 @@ clear: both;
 	  min-width: 270px;
 	}
 
-	.sidebar-header-top p, .sidebar-header-top p a {
+	.sidebar-header-top p, .sidebar-header-top p a{
 		color: #fff;
 		font-size: 18px;
 		min-width: 180px;
