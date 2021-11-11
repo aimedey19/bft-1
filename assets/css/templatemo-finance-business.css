@@ -1749,12 +1749,15 @@ clear: both;
 	}
 
 	#sidebar-drop-content li{
-		margin: 8px 0;
+		margin: 20px 0;
 		font-size: 14px;
 	}
 
 	#sidebar-drop-content li a{
 		color: #508016 ;
+		padding: 5px;
+		margin: 10px 0 !important;
+		background-color: rgb(225, 225, 225);
 	}
 
 	.sidebar .collapse{
