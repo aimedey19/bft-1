@@ -1716,7 +1716,7 @@ clear: both;
 	  top: 0; right: 0; bottom: 0; left: 0;
 	}
 	
-	.sidebar p a,  .sidebar div {
+	.sidebar div,  .sidebar div {
 	  padding: 15px 20px;
 	  text-decoration: none;
 	  font-size: 16px;
@@ -1724,6 +1724,10 @@ clear: both;
 	  color: #000;
 	  width: 100%;
 	  transition: 0.3s;
+	}
+
+	.sidebar div a{
+		color: #000;
 	}
 
 	#sidebar-drop-content li{
