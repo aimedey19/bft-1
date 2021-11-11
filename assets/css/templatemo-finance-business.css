@@ -231,6 +231,13 @@ a.border-button:hover {
 
 
 /* Header Style */
+
+.mini-header h1, .mini-header h1 span{
+	font-size: 56px; 
+	text-align: left !important; 
+	text-transform: none;
+}
+
 header {
 	position: absolute;
 	z-index: 99999;
