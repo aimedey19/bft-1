@@ -361,6 +361,24 @@ header .navbar {
 	line-height: 26px;
 }
 
+@media only screen and (min-width: 600px) {
+	.navbar-toggler {
+		display: block !important;
+	}
+	.navbar-nav {
+		display: none !important;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.navbar-toggler {
+		display: none !important;
+	}
+	.navbar-nav {
+		display: flex !important;
+	}
+}
+
 
 
 /* Banner Style */
@@ -1644,7 +1662,7 @@ z-index: 1;
 
 
 /* Show the dropdown menu on hover */
-.dropdowni:hover .dropdowni-content1, .dropdowni:hover .dropdowni-content2, .dropdowni:hover .dropdowni-content3, .dropdowni:active .dropdowni-content1 {
+.dropdowni:hover .dropdowni-content1, .dropdowni:hover .dropdowni-content2, .dropdowni:hover .dropdowni-content3, .dropdowni:focus .dropdowni-content1 {
 display: block;
 }
 
