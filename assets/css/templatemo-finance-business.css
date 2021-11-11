@@ -1757,6 +1757,10 @@ clear: both;
 		color: #508016 ;
 	}
 
+	.sidebar .collapse{
+		z-index: 300000;
+	}
+
 	.sidebar .collapse-btn::after {
 		content: '>';
 		font-weight: 400;
