@@ -39,6 +39,49 @@ https://templatemo.com/tm-545-finance-business
     </div>  
     <!-- ***** Preloader End ***** -->
 
+    <div id="sidebar" class="sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-header-top">
+         
+        </div>
+        
+      </div>
+  
+      <p>
+        <a href="{% url 'categories' %}"  class="h6"></a>
+      </p>
+        <p><a href="{% url 'category' category.slug %}"></a></p>
+        
+        <div class="subcategories">
+            <a href="{% url 'category' scat.slug %}" class="ml-4"></a>
+        </div>
+    </div>
+
+    <div onclick="closeNav()" id="overlay">
+		
+    </div>
+    <a href="javascript:void(0)" id="closebtn" class="closebtn" onclick="closeNav()"><i class="fa fa-times"></i></a>
+      
+      <script>
+      function openNav() {
+      document.getElementById("sidebar").style.width = "300px";
+      document.querySelector('body').style.overflow = "hidden";
+      document.getElementById("overlay").style.display = "block";
+      document.getElementById("closebtn").style.visibility = "visible";
+      document.getElementById("opensidebarbtn").style.display ="none";
+      
+      }
+      
+      function closeNav() {
+      document.getElementById("sidebar").style.width = "0";
+      document.querySelector('body').style.overflow = "initial";
+      document.getElementById("overlay").style.display = "none";
+      document.getElementById("closebtn").style.visibility = "hidden";
+      document.getElementById("opensidebarbtn").style.display ="block";
+      }
+      </script>
+  
+
     <!-- Header -->
     <div class="sub-header">
       <div class="container">
@@ -68,7 +111,7 @@ https://templatemo.com/tm-545-finance-business
       <nav class="navbar navbar-expand-lg">
         <div class="container">
           <a class="" href="index.html"><img class="navbar-brand logo" src="assets/images/logo.jpg" alt=""></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <button id="opensidebarbtn" class="navbar-toggler" type="button" onclick="openNav()" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -87,7 +130,7 @@ https://templatemo.com/tm-545-finance-business
                         <a href="#">Notre Plateforme</a>
                         <a href="#">Matériels & Consommables</a>
                         <a href="#">Sécurité</a>
-                        <br><br>
+                        <br>
                         <h6 class="text-left">Services</h6>
                         <p>Lorem ipsum dolor set amet dit serpo ut demet </p>
                         <a href="#">Génie Logiciel</a>
