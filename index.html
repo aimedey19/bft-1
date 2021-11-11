@@ -39,10 +39,12 @@ https://templatemo.com/tm-545-finance-business
     </div>  
     <!-- ***** Preloader End ***** -->
 
+    <!-- *******Collapse Sidebar elements ******** -->
     <div id="sidebar" class="sidebar">
-      <div class="sidebar-header">
+      <div class="sidebar-header p-0">
         <div class="sidebar-header-top">
-          <a class="" href="index.html">BFT</a>
+          <a class="" href="index.html"><img class="navbar-brand logo" src="assets/images/logo.jpg" alt=""></a>
+          <a href="javascript:void(0)" id="closebtn" class="closebtn" style="" onclick="closeNav()"><i class="fa fa-times" style="font-weight: 100;"></i></a>
         </div>
 
         
@@ -51,11 +53,11 @@ https://templatemo.com/tm-545-finance-business
         <p><a href="index.html">Accueil</a></p>
 
 
-        <div class="dropdown">
-          <a type="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <div id="accordion">
+          <a type="button" class="collapse-btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
             Que faisons nous?
           </a>
-          <div class="dropdown-menu" style="width: 100% !important; padding-left: 35px; border: none; box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.199);">
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
             <ul id="sidebar-drop-content">
               <li>Technologies Financières</li>
               <li><a href="#"> Notre Plateforme</a></li>
@@ -70,22 +72,51 @@ https://templatemo.com/tm-545-finance-business
             </ul>
           </div>
         </div>
-      <p>
-        <a href="{% url 'categories' %}"  class="h6"></a>
-      </p>
-        <p><a href="{% url 'category' category.slug %}"></a></p>
-        
-        <div class="subcategories">
-            <a href="{% url 'category' scat.slug %}" class="ml-4"></a>
+
+        <div id="accordion">
+          <a type="button" class="collapse-btn" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+            Institutions Financières
+          </a>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+            <ul id="sidebar-drop-content">
+              <li><a href="#"> Institutions de Microfinance</a></li>
+              <li><a href="#"> Banques Postales</a></li>
+              <li><a href="#"> Sociétés d'Assurances</a></li>
+              <li><a href="#"> Sociétés de Gestion des Marchés</a></li>
+              <li><a href="#"> Régies des Collectivités Locales</a></li>
+            </ul>
+          </div>
         </div>
+
+        <div id="accordion">
+          <a type="button" class="collapse-btn" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+            À Propos
+          </a>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+            <ul id="sidebar-drop-content">
+              <li>BFT Group</li>
+              <li><a href="#"> Notre histoire</a></li>
+              <li><a href="#"> Mission</a></li>
+              <li><a href="#"> Vision</a></li>
+              <li><a href="#"> Valeurs</a></li>
+              <br>
+              <li>Contact</li>
+              <li><a href="#"> contact@bftgroup.co</a></li>
+              <span class="d-flex justify-content-between">
+                <li><a href="#"> <i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"> <i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"> <i class="fab fa-linkedin"></i></a></li>
+
+              </span>
+            </ul>
+          </div>
+        </div>
+
     </div>
 
-    <div onclick="closeNav()" id="overlay">
-		
-    </div>
-    <a href="javascript:void(0)" id="closebtn" class="closebtn" onclick="closeNav()"><i class="fa fa-times"></i></a>
-      
-      <script>
+    <div onclick="closeNav()" id="overlay"></div>
+
+    <script>
       function openNav() {
       document.getElementById("sidebar").style.width = "300px";
       document.querySelector('body').style.overflow = "hidden";
@@ -102,7 +133,8 @@ https://templatemo.com/tm-545-finance-business
       document.getElementById("closebtn").style.visibility = "hidden";
       document.getElementById("opensidebarbtn").style.display ="block";
       }
-      </script>
+    </script>
+    <!-- *********End of Collapse Sidebar******** -->
   
 
     <!-- Header -->
@@ -144,7 +176,7 @@ https://templatemo.com/tm-545-finance-business
                 </a>
               </li>
               <li class="nav-item dropdowni">
-                <a class="nav-link" href="services.html">Que faisons nous?</a>
+                <a class="nav-link">Que faisons nous?</a>
                 <div class="dropdowni-content1">
                   <div class="rowi">
                     <div class="col-md-12 columni">

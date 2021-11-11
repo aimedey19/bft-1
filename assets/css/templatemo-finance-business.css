@@ -242,7 +242,7 @@ header {
     -o-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
 }
-header .logo {
+.logo {
 	position: relative;
 	max-height: 70px;
 	width: auto;
@@ -1644,7 +1644,7 @@ z-index: 1;
 
 
 /* Show the dropdown menu on hover */
-.dropdowni:hover .dropdowni-content1, .dropdowni:hover .dropdowni-content2, .dropdowni:hover .dropdowni-content3 {
+.dropdowni:hover .dropdowni-content1, .dropdowni:hover .dropdowni-content2, .dropdowni:hover .dropdowni-content3, .dropdowni:active .dropdowni-content1 {
 display: block;
 }
 
@@ -1734,12 +1734,18 @@ clear: both;
 		color: #508016 ;
 	}
 
-	.sidebar .dropdown::after {
+	.sidebar .collapse-btn::after {
 		content: '>';
+		font-weight: 400;
+		color: rgb(49, 49, 49);
 		position: absolute;
 		font-size: 16px;
 		right: 10px;
 	  }
+
+	.collapse-btn{
+		padding: 10px 0;
+	}
 
 	.sidebar .subcategories a {
 	  padding: 5px 5px 5px 10px;
@@ -1790,18 +1796,14 @@ clear: both;
 	}
 	
 	.closebtn {
-	  visibility: hidden;
-	  flex: 1;
-	  z-index: 100000;
-	  font-weight: 200;
-	  font-size: 36px;
-	  color: #ffffff;
-	  left: 320px !important;
-      position: absolute;
+		float: right; 
+		color:black !important;
+		font-size: 28px;
+		font-weight: 400;
 	}
 
 	.closebtn:hover{
-		color: #fff;
+		color: #88bc49 !important;
 	}
 	
 	.openbtn {
