@@ -1259,15 +1259,14 @@ footer .contact-form button.filled-button:hover {
   margin-bottom: 0px;
 }
 #tabs ul li a {
-	text-transform: capitalize;
+	text-transform: lowercase;
 	width: 100%;
 	padding: 15px 30px;
 	display: inline-block;
-	background-color: #2d3235;
   	font-size: 20px;
-  	color: #8d8d8d;
+  	color: #000;
   	letter-spacing: 0.5px;
-  	font-weight: 700;
+  	font-weight: 500;
   	transition: all 0.3s;
 }
 #tabs ul li a i {
@@ -1281,7 +1280,8 @@ footer .contact-form button.filled-button:hover {
   border-bottom: none;
 }
 #tabs ul .ui-tabs-active a {
-  color: #fff;
+  color: #88bc49;
+  border-left: 2px solid #88bc49;
 }
 #tabs ul .ui-tabs-active span {
   color: #1e1e1e;
