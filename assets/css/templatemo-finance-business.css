@@ -1758,7 +1758,9 @@ clear: both;
 	}
 
 	.sidebar .collapse{
-		z-index: 300000;
+		z-index: 200000;
+		position: relative;
+		background: #fff;
 	}
 
 	.sidebar .collapse-btn::after {
