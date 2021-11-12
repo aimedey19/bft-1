@@ -244,7 +244,7 @@ a.border-button:hover {
 /* Header Style */
 
 .mini-header h1, .mini-header h1 span{
-	font-size: 56px !important; 
+	font-size: 40px !important; 
 	text-align: left !important; 
 	text-transform: none;
 }
