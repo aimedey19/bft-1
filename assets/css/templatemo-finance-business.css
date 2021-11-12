@@ -665,6 +665,43 @@ ul.slick-dots {
 }
 
 
+/*** Section part ***/
+.section-part {
+	margin-top: 40px;
+	padding: 50px 15px;
+	background-color: #f9fafb
+}
+
+.section-part .service-item {
+	padding-top: 35px;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.152);
+}
+
+.section-part .service-item img {
+	max-height: 100%;
+	max-width: 100%;
+	overflow: hidden;
+}
+
+.section-part .service-item .down-content {
+	text-align: center;
+	padding: 30px;
+}
+
+.section-part .service-item .down-content h4 {
+	font-size: 26px;
+	font-weight: 500;
+	letter-spacing: 0.25px;
+	margin-bottom: 15px;
+}
+
+.section-part .service-item .down-content p {
+	text-align: justify;
+	min-height: 150px !important;
+}
+
 
 /* Fun Facts */
 
