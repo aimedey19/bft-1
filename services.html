@@ -60,12 +60,12 @@ https://templatemo.com/tm-545-finance-business
           <div id="collapseOne" class="collapse m-0" aria-labelledby="headingOne" data-parent="#accordion">
             <ul id="sidebar-drop-content">
               <li>Technologies Financières</li>
-              <li><a href="services.html"> Notre Plateforme</a></li>
+              <li><a href="plateform.html"> Notre Plateforme</a></li>
               <li><a href="materials.html"> Matériels & Consommables</a></li>
               <li>Services</li>
-              <li><a href="#"> Déploiement & Support</a></li>
-              <li><a href="#"> Monitoring & Cybersécurité</a></li>
-              <li><a href="#"> Assistance Technique</a></li>
+              <li><a href="services.html"> Déploiement & Support</a></li>
+              <li><a href="services.html#monitoring-cybersecurity"> Monitoring & Cybersécurité</a></li>
+              <li><a href="services.html#technical-assistance"> Assistance Technique</a></li>
             </ul>
           </div>
         </div>
@@ -182,17 +182,17 @@ https://templatemo.com/tm-545-finance-business
                     <div class="col-md-12 columni">
                         <h6 class="text-left">Technologies Financières</h6>
                         <p>Lorem ipsum dolor set amet dit serpo ut demet </p>
-                        <a href="services.html">Notre Plateforme</a>
+                        <a href="plateform.html">Notre Plateforme</a>
                         <a href="materials.html">Matériels & Consommables</a>
                          
                         <br>
                         <h6 class="text-left">Services</h6>
                         <p>Lorem ipsum dolor set amet dit serpo ut demet </p>
                          
-                         <a href="#">Déploiement & Support</a>
-                        <a href="#">Monitoring & Cybersécurité</a>
-                        <a href="#">Formation</a>
-                        <a href="#">AssistanceTechnique</a>
+                         <a href="services.html">Déploiement & Support</a>
+                        <a href="services.html#monitoring-cybersecurity">Monitoring & Cybersécurité</a>
+                         
+                        <a href="services.html#technical-assistance">AssistanceTechnique</a>
                     </div>
                   </div>
                 </div>
@@ -240,7 +240,7 @@ https://templatemo.com/tm-545-finance-business
 
               </li>
               <!-- <li class="nav-item">
-                <a class="nav-link" href="services.html">Réalisations</a>
+                <a class="nav-link" href="plateform.html">Réalisations</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact</a>
@@ -256,7 +256,7 @@ https://templatemo.com/tm-545-finance-business
       <div class="container">
         <div class="row">
           <div class="mini-header col-md-6 align-self-center">
-            <h1>Notre Plateforme <span>SmartBFT</span></h1>
+            <h1>Déploiement & <span>Support</span></h1>
             <p>
              SmartBFT Core est une plateforme multicanale de finance digitale qui permmet aux institutions financières, en fonction de leurs besoins, de digitaliser leurs processus, d'offrir des services financiers à distance et/ou d'offrir des services financiers numériques.
             </p>
@@ -271,33 +271,47 @@ https://templatemo.com/tm-545-finance-business
     </div>
     
 
-    <div class="fun-facts m-0">
+    <div id="monitoring-cybersecurity" class="fun-facts m-0">
       <div class="container">
         <div class="align-self-center">
           <div class="row">
-            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 mt-2 text-center">
-              <img src="assets/images/web-app.svg" class="mb-5" style="max-width: auto; max-height: 100px;" alt="">
-              <h6>Une Appli Web</h6>
-              <p>Une appliction déployée sur un terminal pour la gestion des opérations terrain</p>
+            <div class="col-md-12">
+                <div class="section-heading">
+                  <h2>Monitoring & <em>Cybersécurité</em></h2>
+                  <p>Le PCI DSS ne laisse aucun doute quant à la nécessité d'établir des réseaux sécurisés pour aboutir à la conformité. Aussi, la première exigence stipule que pour être conforme, une organisation doit mettre en place un réseau sécurisé et en assurer la pérennité ; Pour héberger la plateforme SMARTBFT CORE sur AWS, nous avons opté pour une architecture 3-tiers de référence. Elle se présente en trois (03) couches cloisonnées par des contrôles d’accès à savoir : la couche bastion, la couche serveur d’application, la couche base de données.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 mt-2 text-center">
+              <img src="assets/images/web-app.svg" class="mb-2" style="max-width: auto; max-height: 100px;" alt="">
+              <h6>La couche bastion</h6>
+                <p class="m-0">
+                    Le bastion est la couche exposée à l’internet ; il est constitué d’une couche subnet qui comprend les éléments suivants :
+                    <ul class="body-ul p-0">   
+                        <li>Le WAF (Web Application Firewall) qui est l’interface d’accès à la couche serveur d’application</li>
+                        <li>Le PAM (Privileged Access Manager) qui est l’interface d’accès à l’administration de toute l’infrastructure VPC de la plateforme SMART-PAY Core.</li>
+                    </ul>
+                </p>
             </div>
 
-            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 mt-2 text-center">
-              <img src="assets/images/mobile.svg" class="mb-5" style="max-width: auto; max-height: 100px;" alt="">
-              <h6>Une Appli Mobile</h6>
-              <p>Une appliction déployée sur un terminal pour la gestion des opérations terrain</p>
+            <div class="col-lg-6 col-md-6 col-sm-6 mt-2 text-center">
+              <img src="assets/images/mobile.svg" class="mb-2" style="max-width: auto; max-height: 100px;" alt="">
+              <h6>La couche serveur d’application</h6>
+              <p class="m-0">
+                C’est la couche qui abrite le serveur d’application et les mécanismes de protections uniques à l’application. Elle n’est accessible qu’à partir du bastion seulement pour l’administration mais aussi à partir du WAF pour l’accessibilité des services
+              </p>
             </div>
 
-            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 mt-2 text-center">
-              <img src="assets/images/server-app.svg" class="mb-5" style="max-width: auto; max-height: 100px;" alt="">
-              <h6>Une Appli Serveur</h6>
-              <p>Pour la gestion du back office accessible via un portail web</p>
+            <div class="col-lg-6 col-md-6 col-sm-6 mt-2 text-center">
+              <img src="assets/images/server-app.svg" class="mb-2" style="max-width: auto; max-height: 100px;" alt="">
+              <h6>La couche de bases de données</h6>
+              <p class="m-0">Comme son nom l’indique, elle abrite toute l’infrastructure native d’accès aux bases de données avec les systèmes de réplications adéquat.</p>
             </div>
 
 
-            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 mt-2 text-center">
-              <img src="assets/images/api-composante.svg" class="mb-5" style="max-width: auto; max-height: 100px;" alt="">
-              <h6>Une API</h6>
-              <p>Pour l'interconnexion de la solution au SIG de l'Institution financière</p>
+            <div class="col-lg-6 col-md-6 col-sm-6 mt-2 text-center">
+              <img src="assets/images/api-composante.svg" class="mb-2" style="max-width: auto; max-height: 100px;" alt="">
+              <h6>Réplication inter-sites</h6>
+              <p class="m-0">Les sous réseaux application et base de données utilisent un NAT pour les besoin de réplication de l’infrastructure vers les sites des opérateurs.</p>
             </div>
 
           </div>
@@ -305,337 +319,24 @@ https://templatemo.com/tm-545-finance-business
       </div>
     </div>
   
-    <div class="single-services">
-      <div class="container">
-        <div class="row">
-        <div class="col-md-12">
-          <div class="section-heading text-left">
-            <h2>Modules de <em>Solutions</em></h2>
-            <span>Aliquam id urna imperdiet libero mollis hendrerit</span>
+    <div class="page-heading header-text" id="technical-assistance" style="padding-top: 50px !important; margin-top: 100px;">
+        <div class="container">
+          <div class="row">
+            <div class="mini-header col-md-6 align-self-center">
+              <h1>Assistance <span>Technique</span></h1>
+              <p>
+                Nous accompagnons nos Partenaires dans chaque étape de leur processus que ce soit dans l’accomplissement d’une tâche intellectuelle (conseils, suivi,…) ou matérielle (maintenance) et, s’ils le souhaitent, jusqu’au transfert de compétences à travers une démarche personnalisée et simplifiée.
+              </p>
+            </div>
+            <div class="col-md-6 align-self-center">
+              <div class="left-image">
+                <img src="assets/images/support.svg" style="max-width: 100%; max-height: 100%;" alt="">
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-md-12 row" id="tabs">
-          <div class="col-md-3">
-            <ul>
-              <li><a href='#tabs-1'>SMART SAVING </a></li>
-              <li><a href='#tabs-2'>SMART CREDIT </a></li>
-              <li><a href='#tabs-3'>SMART AGRI </a></li>
-              <li><a href='#tabs-4'>SMART TAX </a></li>
-              <li><a href='#tabs-5'>SMART PAY </a></li>
-              <li><a href='#tabs-6'>SMART PARKING </a></li>
-              <li><a href='#tabs-7'>SMART CENSUS </a></li>
-              <li><a href='#tabs-8'>SMART SWITCH </a></li>
-            </ul>
-          </div>
-          <div class="col-md-9">
-            <section class='tabs-content'>
-              <article id='tabs-1'>
-                <h2>Smart Saving</h2>
-                <img src="assets/images/3_smart_collect.png" alt="">
-                <h4>Smart Saving</h4>
-                <p>SMART-SAVING est une solution de finance digitale qui permet de numériser tous les
-                  processus de gestion de l’épargne et de la tontine. Elle opère au moyen de Terminaux mobiles
-                  et de Cartes d’identification électroniques des clients. La robustesse de la solution est garantie
-                  par un mode « OFFLINE », qui lui permet de fonctionner avec fiabilité́ même sans connexion
-                  internet.
-                </p>
-
-                <h4>FONCTIONNALITES</h4>
-                <p>De manière non exhaustive, la solution SMART-SAVING permet de :</p>
-                <ul class="list-group list-group">
-                  <li class="list-group-item">Gérer les différents types d’épargne (tontine, épargne à vue, dépôts à terme).</li>
-                  <li class="list-group-item">Gérer efficacement le KYC (enrôlement, géolocalisation, assignation de cartes NFC
-                    en remplacement des livrets traditionnels, etc.)</li>
-                  <li class="list-group-item">Accéder à distance et faire le monitoring de toutes les opérations en temps réel</li>
-                  <li class="list-group-item">Produire des reçus de paiement personnalisés et compréhensible par les
-                    analphabètes</li>
-                  <li class="list-group-item">Evaluer les performances de l’activité à partir de modules de Business Intelligence.</li>
-                </ul>
-
-                <h4>AVANTAGES</h4>
-                <p>Au-delà d’être un produit d’appel pour l’institution financière, SMART-SAVING offre un
-                  grand nombre d’avantages notamment :</p>
-                <ul class="list-group list-group">
-                  <li class="list-group-item">La modernisation et la digitalisation de la collecte de l’épargne</li>
-                  <li class="list-group-item">La traçabilité et la sécurisation de l’épargne</li>
-                  <li class="list-group-item">La confidentialité des informations financières et d’identification des clients</li>
-                  <li class="list-group-item">L’accroissement du volume d’épargne collecté et de la productivité de toute la
-                    chaine de valeur tout en gardant un même niveau de charges opérationnelles</li>
-                  <li class="list-group-item">Le Suivi en temps réel lors de la collecte journalière de l’évolution de la constitution
-                    des traites de remboursement des crédits adossé à la tontine afin de garantir le
-                    remboursement en fin de période</li>
-                  <li class="list-group-item">La lutte contre le blanchiment de capitaux et le financement du terrorisme, etc.</li>
-                </ul>
-              </article>
-
-              <article id='tabs-2'>
-                <img src="assets/images/single_service_02.jpg" alt="">
-                <h4>Smart Credit</h4>
-                <p>
-                  SMART-CREDIT est une solution de finance digitale destinée à la gestion numérique du crédit.
-                  Elle permet de digitaliser le traitement de la demande de crédit ainsi que le suivi des
-                  remboursements et du portefeuille à risque. Les agents de crédit déployés sur leur périmètre de
-                  compétence sont dotés de Terminaux mobiles leurs permettant d’effectuer avec célérité́ toutes
-                  les opérations liées aux demandes de crédits. Les clients peuvent également procéder à la
-                  demande du crédit directement en ligne à partir d’une application mobile ou web déployée pour
-                  le compte de l’Institution financière. La robustesse de la solution est garantie par un mode «
-                  OFFLINE », qui lui permet de fonctionner avec fiabilité́ même sans connexion internet.
-                  SMART-CREDIT propose également des modules pour la digitalisation des crédits aux
-                  groupements.
-                </p>
-                <h4>COMPOSANTES</h4>
-                <ul class="list-group list-group">
-                  <li class="list-group-item">Une application mobile déployée sur un terminal pour la gestion des opérations
-                    terrain</li>
-                  <li class="list-group-item">Une application serveur pour la gestion du back office accessible via un portail web</li>
-                  <li class="list-group-item">Une API d’interconnexion de la solution au SIG de l’institution financière</li>
-                </ul>
-
-                <h4>FONCTIONNALITES</h4>
-                <p>De manière non exhaustive, la plateforme SMART-CREDIT permet de :</p>
-                <ul class="list-group list-group">
-                  <li class="list-group-item">Enregistrer via un Terminal mobile ou une application client (mobile ou web),
-                    l’expression du besoin en crédit du client directement sur le terrain</li>
-                  <li class="list-group-item">Collecter, numériser et centraliser toutes les informations nécessaires (KYC, et tout
-                    autre documents du demandeur et de ses cautions) au traitement de la demande et à son
-                    analyse financière</li>
-                  <li class="list-group-item">Relever les coordonnées GPS et prise des photos du lieu d’activité du client et de son
-                    domicile afin de faciliter le recouvrement des impayés (utile en cas de changement de
-                    portefeuille client)</li>
-                  <li class="list-group-item">Générer automatiquement les contrats personnalisés de crédit au format PDF prêt pour
-                    impression et signature</li>
-                  <li class="list-group-item">Evaluer les performances de l’activité, suivre les indicateurs du portefeuille à risque à
-                    partir de modules de Business Intelligence et produire les statistiques et rapports
-                    d’activité selon les canevas réglementaires</li>
-                </ul>
-
-                <h4>AVANTAGES</h4>
-                <p>SMART-CREDIT offre un grand nombre d’avantages notamment :</p>
-                <ul class="list-group list-group">
-                  <li class="list-group-item">Toutes les opérations de demande, de suivi et de recouvrement du crédit se font
-                    directement sur le terrain, ce qui constitue un véritable gain d’opportunité pour les
-                    clients</li>
-                  <li class="list-group-item">Archivage numérique et automatisation des dossiers de crédits</li>
-                  <li class="list-group-item">Monitoring et génération d’alertes à temps du risque de non remboursement d’un crédit
-                    adossé à la tontine</li>
-                  <li class="list-group-item">L’accroissement du volume de crédits octroyés et de la productivité de toute la chaine
-                    de valeur, tout en gardant un même niveau de charges opérationnelles et un faible risque
-                    de non remboursement</li>
-                </ul>
-              </article>
-
-              <article id='tabs-3'>
-                <img src="assets/images/single_service_03.jpg" alt="">
-                <h4>Smart Agri</h4>
-                <p>
-                  SMART-AGRI est une solution qui permet de digitaliser le traitement de la demande du crédit
-                  agricole ainsi que le suivi des remboursements et du portefeuille à risque. Les agents de crédit
-                  déployés sur leur périmètre de compétence sont dotés de Terminaux mobiles leurs permettant
-                  d’effectuer avec célérité́ toutes les opérations liées aux demandes de crédits. Les clients peuvent
-                  également procéder à la demande du crédit directement en ligne à partir d’une application
-                  mobile ou web déployée pour le compte de l’Institution financière. La robustesse de la solution
-                  est garantie par un mode « OFFLINE », qui lui permet de fonctionner avec fiabilité́ même sans
-                  connexion internet.
-                </p>
-                <h4>COMPOSANTES</h4>
-                <ul class="list-group list-group">
-                  <li class="list-group-item">Une application mobile déployée sur un terminal pour la gestion des opérations
-                    terrain</li>
-                  <li class="list-group-item">Une application serveur pour la gestion du back office accessible via un portail web</li>
-                  <li class="list-group-item">Une API d’interconnexion de la solution au SIG de l’institution financière</li>
-                </ul>
-
-                <h4>FONCTIONNALITES</h4>
-                <p>De manière non exhaustive, la plateforme SMART-AGRI permet de :</p>
-                <ul class="list-group list-group">
-                  <li class="list-group-item">Enregistrer via un Terminal mobile ou une application client (mobile ou web),
-                    l’expression du besoin en crédit agricole individuel ou de groupe directement sur le
-                    terrain</li>
-                  <li class="list-group-item">Collecter, numériser et centraliser toutes les informations nécessaires (KYC, et tout
-                    autre documents du demandeur et de ses cautions) au traitement de la demande et à son
-                    analyse financière</li>
-                  <li class="list-group-item">Relever les coordonnées GPS et prise des photos du lieu d’activité du client et de son
-                    domicile afin de faciliter le recouvrement des impayés (utile en cas de changement de
-                    portefeuille client)</li>
-                  <li class="list-group-item">Générer automatiquement les contrats personnalisés de crédit au format PDF prêt pour
-                    impression et signature</li>
-                  <li class="list-group-item">Evaluer les performances de l’activité, suivre les indicateurs du portefeuille à risque à
-                    partir de modules de Business Intelligence et produire les statistiques et rapports
-                    d’activité selon les canevas réglementaires</li>
-                </ul>
-
-                <h4>AVANTAGES</h4>
-                <p>SMART-AGRI offre un grand nombre d’avantages notamment :</p>
-                <ul class="list-group list-group">
-                  <li class="list-group-item">Toutes les opérations de demande, de suivi et de recouvrement du crédit se font
-                    directement sur le terrain, ce qui constitue un véritable gain d’opportunité pour les
-                    clients</li>
-                  <li class="list-group-item">Archivage numérique et automatisation des dossiers de crédits</li>
-                  <li class="list-group-item">Monitoring et génération d’alertes à temps du risque de non remboursement d’un crédit
-                    agricole</li>
-                  <li class="list-group-item">La maitrise de la gestion du crédit agricole et l’accroissement de la productivité de toute
-                    la chaine de valeur, tout en gardant un même niveau de charges opérationnelles et un
-                    faible risque de non remboursement</li>
-                </ul>
-              </article>
-
-              <article id='tabs-4'>
-                <h2>Smart Tax</h2>
-                <img src="assets/images/smart_tax.png" alt="">
-                <h4>Smart Tax</h4>
-                <p>
-                  C’est une solution électronique complète et intégrée, destinée aux collectivités territoriales
-                  décentralisés ou aux Etats, permettant la collecte et le suivi efficace des taxes et recettes non
-                  fiscales.
-                </p>
-
-                <h4>FONCTIONNALITES</h4>
-                <p>De manière non exhaustive, la plateforme SMART-TAX permet :</p>
-                <ul class="list-group list-group">
-                  <li class="list-group-item">Le recensement des contribuables</li>
-                  <li class="list-group-item">La personnalisation et l’attribution de cartes électroniques d’identification</li>
-                  <li class="list-group-item">Le recensement des étals et équipements marchands</li>
-                  <li class="list-group-item">La collecte électronique des recettes sur les marchés et hors des marchés</li>
-                  <li class="list-group-item">Le reversement des collectes</li>
-                  <li class="list-group-item">La génération du journal de transactions</li>
-                </ul>
-
-                <h4>AVANTAGES</h4>
-                <p>SMART-TAX offre un grand nombre d’avantages notamment :</p>
-                <ul class="list-group list-group">
-                  <li class="list-group-item">La consolidation et la maximisation des recettes fiscales</li>
-                  <li class="list-group-item">La lutte contre les fuites de capitaux</li>
-                </ul>
-              </article>
-
-              <article id='tabs-5'>
-                <h2>Smart Pay</h2>
-                <img src="assets/images/bft-smart-pay.png" alt="">
-                <h4>Smart Pay</h4>
-                <p>
-                  C’est une solution sécurisée d’émission, de traitement et de distribution de monnaie
-                  électronique. Elle permet de gérer les opérations telles que la création et la fermeture de comptes
-                  de monnaie électronique, le dépôt, le retrait, le transfert, le paiement marchand, etc.                </p>
-
-                <h4>FONCTIONNALITES</h4>
-                <p>De manière non exhaustive, la plateforme SMART-PAY permet de :</p>
-                <ul class="list-group list-group">
-                  <li class="list-group-item">Créer, gérer et administrer des comptes de monnaie électronique</li>
-                  <li class="list-group-item">Effectuer des dépôts, retraits, transferts d’argent et payements</li>
-                </ul>
-
-                <h4>AVANTAGES</h4>
-                <p>SMART-PAY offre un grand nombre d’avantages notamment :</p>
-                <ul class="list-group list-group">
-                  <li class="list-group-item">La réduction des risques de fraudes</li>
-                  <li class="list-group-item">La réduction des risques d’impayés dus aux échanges monétaires</li>
-                  <li class="list-group-item">La réduction des coûts comparativement aux frais bancaires</li>
-                </ul>
-              </article>
-
-              <article id='tabs-6'>
-                <img src="assets/images/single_service_04.jpg" alt="">
-                <h4>Smart Parking</h4>
-                <p>
-                  SMART PARKING est une solution de dématérialisation du suivi des recettes de parkings
-                  urbain et de péages routiers.                </p>
-
-                <h4>COMPOSANTES</h4>
-                <ul class="list-group list-group">
-                  <li class="list-group-item">Une application mobile déployée sur un terminal pour la gestion des opérations
-                    terrain</li>
-                  <li class="list-group-item">Une application serveur pour la gestion du back office accessible via un portail web</li>
-                  <li class="list-group-item">Une API d’interconnexion de la solution au SIG de l’institution</li>
-                </ul>
-
-                <h4>FONCTIONNALITES</h4>
-                <p>De manière non exhaustive, la plateforme SMART PARKING permet de :</p>
-                <ul class="list-group list-group">
-                  <li class="list-group-item">Dématérialiser et centraliser les paiements et droits de passage</li>
-                  <li class="list-group-item">Effectuer le monitoring sur les sites à l’aide de caméras de surveillance
-                    interconnectées</li>
-                </ul>
-
-                <h4>AVANTAGES</h4>
-                <p>SMART PARKING offre un grand nombre d’avantages notamment :</p>
-                <ul class="list-group list-group">
-                  <li class="list-group-item">L’automatisation du calcul des recettes</li>
-                  <li class="list-group-item">La maximisation des recettes collectées dans les parkings</li>
-                </ul>
-              </article>
-
-              <article id='tabs-7'>
-                <img src="assets/images/single_service_04.jpg" alt="">
-                <h4>Smart Census</h4>
-                <p>
-                  C'est une solution destinée à faciliter les opérations de collecte d’informations, les enquêtes
-                  statistiques et les recensements dans toutes leurs émanations.
-                </p>
-
-                <h4>COMPOSANTES</h4>
-                <ul class="list-group list-group">
-                  <li class="list-group-item">Une application mobile déployée sur un terminal pour la gestion des opérations
-                    terrain</li>
-                  <li class="list-group-item">Une application serveur pour la gestion du back office accessible via un portail web</li>
-                  <li class="list-group-item">Une API d’interconnexion de la solution au SIG de l’institution</li>
-                </ul>
-
-                <h4>FONCTIONNALITES</h4>
-                <p>De manière non exhaustive, la plateforme SMART CENSUS permet :</p>
-                <ul class="list-group list-group">
-                  <li class="list-group-item">Intégration de formulaires de collecte de données quelle que soit la complexité</li>
-                  <li class="list-group-item">Génération de dictionnaires CsPro à partir de la solution une fois les formulaires de
-                    collectes intégrés</li>
-                  <li class="list-group-item">Intégration d’enquêtes à partir de dictionnaires CsPro existants dans la solution</li>
-                  <li class="list-group-item">Collecte électronique de données et enrôlement biométrique</li>
-                  <li class="list-group-item">Contrôle de cohérence et d’exhaustivité</li>
-                  <li class="list-group-item">Centralisation de toutes les collectes en temps réel vers un cluster de serveurs,
-                    indépendamment de la localisation des agents</li>
-                  <li class="list-group-item">Transfert des données collectées automatiquement vers une base de données CsPro
-                    centrale</li>
-                  <li class="list-group-item">Contrôle des agents sur le site par géolocalisation</li>
-                  <li class="list-group-item">Statistiques de présence, Meilleurs agents, etc.</li>
-                </ul>
-
-                <h4>AVANTAGES</h4>
-                <p>SMART CENSUS offre un grand nombre d’avantages notamment :</p>
-                <ul class="list-group list-group">
-                  <li class="list-group-item">La facilité de collecte, de traitement et de sécurisation des données</li>
-                </ul>
-              </article>
-
-              <article id='tabs-8'>
-                <h2>Smart Switch</h2>
-                <img src="assets/images/2_smart_swich.png" alt="">
-                <h4>Smart Switch</h4>
-                <p>
-                  C’est une passerelle permettant l’interopérabilité pair-à-pair entre notre plateforme et d'autres
-                  systèmes de paiement.                </p>
-
-                <h4>FONCTIONNALITES</h4>
-                <p>De manière non exhaustive, la plateforme SMART SWITCH permet de :</p>
-                <ul class="list-group list-group">
-                  <li class="list-group-item">Effectuer des transferts de comptes bancaires vers des portemonnaies électroniques
-                    et vice versa</li>
-                  <li class="list-group-item">Faciliter l’adoption généralisée des paiements aux commerçants</li>
-                </ul>
-
-                <h4>AVANTAGES</h4>
-                <p>SMART SWITCH offre un grand nombre d’avantages notamment :</p>
-                <ul class="list-group list-group">
-                  <li class="list-group-item">La contribution à l’avancée du Projet d’interopérabilité des services financiers
-                    numériques de la BCEAO</li>
-                </ul>
-              </article>
-
-            </section>
-          </div>
-        </div>
-
-        </div>
-      </div>
     </div>
-
+  
     <div class="partners">
       <div class="container">
         <div class="row">

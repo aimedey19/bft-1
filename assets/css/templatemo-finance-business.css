@@ -631,20 +631,24 @@ ul.slick-dots {
 
 .services {
 	margin-top: 140px;
+	padding: 50px 150px;
+	background-color: #f9fafb
+}
+
+.service-item {
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.152);
 }
 
 .service-item img {
-	width: 100%;
+	max-height: 220px; width: auto;
 	overflow: hidden;
-	border-radius: 8px;
 }
 
 .service-item .down-content {
 	text-align: center;
 	padding: 30px;
-	box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.199);
-	-webkit-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.282);
-	-moz-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
 }
 
 .service-item .down-content h4 {
@@ -655,8 +659,8 @@ ul.slick-dots {
 }
 
 .service-item .down-content p {
-	margin-bottom: 20px;
 	text-align: justify;
+	min-height: 150px !important;
 }
 
 
