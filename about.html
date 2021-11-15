@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="TemplateMo">
-    <link href="https://fonts.googleapis.com/css?family=Segoe UI:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
     <title>À propos de BFT: La Fintech Africaine</title>
 
@@ -39,17 +39,119 @@ https://templatemo.com/tm-545-finance-business
     </div>  
     <!-- ***** Preloader End ***** -->
 
+    <!-- *******Collapse Sidebar elements ******** -->
+    <div id="sidebar" class="sidebar">
+      <div class="sidebar-header p-0">
+        <div class="sidebar-header-top">
+          <a class="" href="index.html"><img class="navbar-brand logo" src="assets/images/logo.jpg" alt=""></a>
+          <a href="javascript:void(0)" id="closebtn" class="closebtn" style="" onclick="closeNav()"><i class="fa fa-times" style="font-weight: 100;"></i></a>
+        </div>
+
+        
+      </div>
+  
+        <div><a href="index.html"> <i class="fa fa-home"></i> Accueil</a></div>
+
+
+        <div id="accordion">
+          <a type="button" class="collapse-btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Que faisons nous?
+          </a>
+          <div id="collapseOne" class="collapse m-0" aria-labelledby="headingOne" data-parent="#accordion">
+            <ul id="sidebar-drop-content">
+              <li>Technologies Financières</li>
+              <li><a href="plateform.html"> Notre Plateforme</a></li>
+              <li><a href="materials.html"> Matériels & Consommables</a></li>
+              <li>Services</li>
+              <li><a href="services.html"> Déploiement & Support</a></li>
+              <li><a href="services.html#monitoring-cybersecurity"> Monitoring & Cybersécurité</a></li>
+              <li><a href="services.html#technical-assistance"> Assistance Technique</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="accordion">
+          <a type="button" class="collapse-btn" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+            Institutions Financières
+          </a>
+          <div id="collapseTwo" class="collapse m-0" aria-labelledby="headingOne" data-parent="#accordion">
+            <ul id="sidebar-drop-content">
+              <li><a href="institutions-fin.html"> Institutions de Microfinance</a></li>
+              <li><a href="postal-banks.html"> Banques Postales</a></li>
+              <li><a href="assurances.html"> Sociétés d'Assurances</a></li>
+              <li><a href="regies.html"> Régies Financières</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="accordion">
+          <a type="button" class="collapse-btn" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+            À Propos
+          </a>
+          <div id="collapseThree" class="collapse m-0" aria-labelledby="headingOne" data-parent="#accordion">
+            <ul id="sidebar-drop-content">
+              <li><a href="#"> Notre histoire</a></li>
+              <li><a href="#"> Mission - Vision - Valeurs</a></li>
+              <li><a href="#"> Notre Équipe</a></li>
+              <li><a href="#"> Nos Partenaires</a></li>
+              <li><a href="#"> Politique et Engagement</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div style="position:absolute; bottom: 5px; background-color: #fff;">
+          <ul>
+            <li><a href="#"> contact@bftgroup.co</a></li>
+            <br>
+            <span class="d-flex justify-content-between">
+              <li><a href="#"> <i class="fab fa-facebook"></i></a></li>
+              <li><a href="#"> <i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"> <i class="fab fa-linkedin"></i></a></li>
+
+            </span>
+          </ul>
+        </div>
+
+    </div>
+
+    <div onclick="closeNav()" id="overlay"></div>
+
+    <script>
+      function openNav() {
+      document.getElementById("sidebar").style.width = "300px";
+      document.querySelector('body').style.overflow = "hidden";
+      document.getElementById("overlay").style.display = "block";
+      document.getElementById("closebtn").style.visibility = "visible";
+      document.getElementById("opensidebarbtn").style.display ="none";
+      
+      }
+      
+      function closeNav() {
+      document.getElementById("sidebar").style.width = "0";
+      document.querySelector('body').style.overflow = "initial";
+      document.getElementById("overlay").style.display = "none";
+      document.getElementById("closebtn").style.visibility = "hidden";
+      document.getElementById("opensidebarbtn").style.display ="block";
+      }
+    </script>
+    <!-- *********End of Collapse Sidebar******** -->
+  
+
     <!-- Header -->
     <div class="sub-header">
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-xs-12">
-            <ul class="left-info">
+            <!-- <ul class="left-info">
               <li><a href="#"><i class="fa fa-clock-o"></i>Mon-Fri 09:00-17:00</a></li>
               <li><a href="#"><i class="fa fa-phone"></i>090-080-0760</a></li>
-            </ul>
+            </ul> -->
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 d-flex justify-content-end">
+            <ul class="left-info">
+<!--               <li><a href="#"><i class="fa fa-clock-o"></i>Mon-Fri 09:00-17:00</a></li>
+ -->              <li><a href="#">Contact</a></li>
+            </ul>
             <ul class="right-icons">
               <li><a href="#"><i class="fab fa-facebook"></i></a></li>
               <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -64,27 +166,82 @@ https://templatemo.com/tm-545-finance-business
       <nav class="navbar navbar-expand-lg">
         <div class="container">
           <a class="" href="index.html"><img class="navbar-brand logo" src="assets/images/logo.jpg" alt=""></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <button id="opensidebarbtn" class="navbar-toggler" type="button" onclick="openNav()" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Accueil
+                <a class="nav-link" href="index.html">Accueil<br>
                 </a>
               </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="about.html">BFT</a>
+              <li class="nav-item dropdowni">
+                <a class="nav-link" type="button">Que faisons nous?</a>
+                <div class="dropdowni-content1">
+                  <div class="rowi">
+                    <div class="col-md-12 columni">
+                        <h6 class="text-left">Technologies Financières</h6>
+                        <p>Lorem ipsum dolor set amet dit serpo ut demet </p>
+                        <a href="plateform.html">Notre Plateforme</a>
+                        <a href="materials.html">Matériels & Consommables</a>
+                        <br>
+                        <h6 class="text-left">Services</h6>
+                        <p>Lorem ipsum dolor set amet dit serpo ut demet </p>
+                        <a href="services.html">Déploiement & Support</a>
+                        <a href="services.html#monitoring-cybersecurity">Monitoring & Cybersécurité</a>
+                        <a href="services.html#technical-assistance">Assistance Technique</a>
+                    </div>
+                  </div>
+                </div>
+
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="plateform.html">Nos solutions</a>
+              <li class="nav-item dropdowni">
+                <a class="nav-link" href="index.html">Institutions Financières
+                </a>
+                <div class="dropdowni-content2">
+                  <div class="rowi">
+                    <div class="col-md-12 columni">
+                        <a href="institutions-fin.html">Institutions de Microfinance</a>
+                        <p>Lorem ipsum dolor set amet dit serpo ut demet </p>
+                        <a href="postal-banks.html"> Banques Postales</a>
+                        <p>Lorem ipsum dolor set amet dit serpo ut demet </p>
+                        <a href="assurances.html"> Sociétés d'Assurances</a>
+                        <p>Lorem ipsum dolor set amet dit serpo ut demet </p>
+                        <a href="regies.html"> Régies Financières</a>
+                        <p>Lorem ipsum dolor set amet dit serpo ut demet </p>
+                    </div>
+                  </div>
+                </div>
+
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="plateform.html">Nos réalisations</a>
+              
+              <li class="nav-item active dropdowni">
+                <a class="nav-link" href="about.html">À Propos</a>
+                <div class="dropdowni-content3">
+                  <div class="rowi">
+                    <div class="col-md-12 columni">
+                        <h6 class="text-left">Notre Histoire</h6>
+                        <small>Lorem ipsum dolor set amet dit serpo ut demet </small>
+                        <div class="d-flex">
+                          <a href="#">Mission - Vision - Valeurs</a>
+                        </div>
+
+                        <a href="#"> <i class="fa fa-envelop"></i> Notre Équipe</a>
+                        <a href="#"> <i class="fa fa-envelop"></i> Nos Partenaires</a>
+                        <a href="#"> <i class="fa fa-envelop"></i> Politique et Engagement</a>
+                        <br>
+                        <a href="#"> Contact</a>
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="plateform.html">Réalisations</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact</a>
-              </li>
+              </li> -->
             </ul>
           </div>
         </div>
@@ -116,16 +273,15 @@ https://templatemo.com/tm-545-finance-business
                 </div> -->
                 <div class="col-md-6 align-self-center">
                   <div class="right-content">
-                    <h2>Get to know about our company</h2>
+                    <h2>L'histoire de BFT Group.</h2>
                     <p>Fusce nec ultrices lectus. Duis nec scelerisque risus. Ut id tempor turpis, ac dignissim ipsum. Nulla ullamcorper, ipsum vel condimentum congue, mi odio vehicula tellus, sit amet malesuada justo sem. 
-                    <br><br>Pellentesque in sagittis lacus, vel auctor sem. Quisque eu quam eleifend, ullamcorper dui nec, luctus quam.</p>
+                    <br>Pellentesque in sagittis lacus, vel auctor sem. Quisque eu quam eleifend, ullamcorper dui nec, luctus quam. Fusce nec ultrices lectus. Duis nec scelerisque risus. Ut id tempor turpis, ac dignissim ipsum. Nulla ullamcorper, ipsum vel condimentum congue, mi odio vehicula tellus, sit amet malesuada justo sem.</p>
                   </div>
                 </div>
                 <div class="col-md-6 align-self-center">
                   <div class="right-content">
-                    <h2>Get to know about our company</h2>
                     <p>Fusce nec ultrices lectus. Duis nec scelerisque risus. Ut id tempor turpis, ac dignissim ipsum. Nulla ullamcorper, ipsum vel condimentum congue, mi odio vehicula tellus, sit amet malesuada justo sem. 
-                    <br><br>Pellentesque in sagittis lacus, vel auctor sem. Quisque eu quam eleifend, ullamcorper dui nec, luctus quam.</p>
+                    <br>Pellentesque in sagittis lacus, vel auctor sem. Quisque eu quam eleifend, ullamcorper dui nec, luctus quam. Pellentesque in sagittis lacus, vel auctor sem. Quisque eu quam eleifend, ullamcorper dui nec, luctus quam.</p>
                   </div>
                 </div>
               </div>

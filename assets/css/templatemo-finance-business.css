@@ -16,8 +16,9 @@ body {
 p {
 	margin-bottom: 0px;
 	font-size: 14px;
-	color: #666666;
+	color: #000000;
 	line-height: 30px;
+	font-weight: 300;
 }
 a {
 	text-decoration: none!important;
@@ -667,7 +668,6 @@ ul.slick-dots {
 
 /*** Section part ***/
 .section-part {
-	margin-top: 40px;
 	padding: 50px 15px;
 	background-color: #f9fafb
 }
@@ -773,8 +773,8 @@ ul.slick-dots {
 .count-digit {
     margin: 5px 0px;
     color: #2d3235;
-    font-weight: 700;
-    font-size: 26px;
+    font-weight: 600;
+    font-size: 20px;
 }
 
 .count-digit-area-content {
@@ -782,9 +782,9 @@ ul.slick-dots {
 	background-color:rgb(255, 255, 255);
 	padding: 25px 30px 25px 30px;
 	margin: 15px 0px;
-	box-shadow: 3px 4px 8px 1px rgba(31,31,31,0.3);
-	-webkit-box-shadow: 3px 4px 8px 1px rgba(31,31,31,0.3);
-	-moz-box-shadow: 3px 4px 8px 1px rgba(31,31,31,0.3);
+	box-shadow: 3px 4px 8px 1px rgba(31,31,31,0.15);
+	-webkit-box-shadow: 3px 4px 8px 1px rgba(31,31,31,0.15);
+	-moz-box-shadow: 3px 4px 8px 1px rgba(31,31,31,0.15);
 }
 
 .count-digit-area-content i{
@@ -807,7 +807,7 @@ ul.slick-dots {
 
 .count-digit-title {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 400;
     color: #2d3235;
     letter-spacing: 0.5px;
 }
@@ -1071,7 +1071,8 @@ max-height:100%;
 }
 
 .partners .partner-item img {
-	max-width: 156px;
+	max-height: 86px;
+	width: auto !important;
 	margin: auto;
 }
 
