@@ -637,6 +637,7 @@ ul.slick-dots {
 }
 
 .service-item {
+	min-height: 630px;
 	text-align: center;
 	background-color: #fff;
 	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.152);
@@ -662,7 +663,7 @@ ul.slick-dots {
 
 .service-item .down-content p {
 	text-align: justify;
-	min-height: 150px !important;
+	margin-bottom: 15px;
 }
 
 
