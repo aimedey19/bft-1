@@ -7,15 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="TemplateMo">
-    <link href="https://fonts.googleapis.com/css?family=Segoe UI:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
-    <title>Finance Business - Contact Page</title>
+    <title>BFT | Contact</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="assets/css/templatemo-finance-business.css">
     <link rel="stylesheet" href="assets/css/owl.css">
 <!--
@@ -39,51 +39,209 @@ https://templatemo.com/tm-545-finance-business
     </div>  
     <!-- ***** Preloader End ***** -->
 
+    <!-- *******Collapse Sidebar elements ******** -->
+    <div id="sidebar" class="sidebar">
+      <div class="sidebar-header p-0">
+        <div class="sidebar-header-top">
+          <a class="" href="index.html"><img class="navbar-brand logo" src="assets/images/logo.jpg" alt=""></a>
+          <a href="javascript:void(0)" id="closebtn" class="closebtn" style="" onclick="closeNav()"><i class="fa fa-times" style="font-weight: 100;"></i></a>
+        </div>
+
+        
+      </div>
+  
+        <div><a href="index.html"> <i class="fa fa-home"></i> Accueil</a></div>
+
+
+        <div id="accordion">
+          <a type="button" class="collapse-btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Que faisons nous?
+          </a>
+          <div id="collapseOne" class="collapse m-0" aria-labelledby="headingOne" data-parent="#accordion">
+            <ul id="sidebar-drop-content">
+              <li>Technologies Financières</li>
+              <li><a href="plateform.html"> Notre Plateforme</a></li>
+              <li><a href="materials.html"> Matériels & Consommables</a></li>
+              <li>Services</li>
+              <li><a href="services.html"> Déploiement & Support</a></li>
+              <li><a href="services.html#monitoring-cybersecurity"> Monitoring & Cybersécurité</a></li>
+              <li><a href="services.html#technical-assistance"> Assistance Technique</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="accordion">
+          <a type="button" class="collapse-btn" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+            Institutions Financières
+          </a>
+          <div id="collapseTwo" class="collapse m-0" aria-labelledby="headingOne" data-parent="#accordion">
+            <ul id="sidebar-drop-content">
+              <li><a href="institutions-fin.html"> Institutions de Microfinance</a></li>
+              <li><a href="postal-banks.html"> Banques Postales</a></li>
+              <li><a href="assurances.html"> Sociétés d'Assurances</a></li>
+              <li><a href="regies.html"> Régies Financières</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="accordion">
+          <a type="button" class="collapse-btn" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+            À Propos
+          </a>
+          <div id="collapseThree" class="collapse m-0" aria-labelledby="headingOne" data-parent="#accordion">
+            <ul id="sidebar-drop-content">
+              <li><a href="about.html#story">Notre Histoire</a></li>
+              <li><a href="#"> Mission - Vision - Valeurs</a></li>
+              <li><a href="#"> Notre Équipe</a></li>
+              <li><a href="#"> Nos Partenaires</a></li>
+              <li><a href="#"> Politique et Engagement</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div style="position:absolute; bottom: 5px; background-color: #fff;">
+          <ul>
+            <li><a href="#"> contact@bftgroup.co</a></li>
+            <br>
+            <span class="d-flex justify-content-between">
+              <li><a href="#"> <i class="fab fa-facebook"></i></a></li>
+              <li><a href="#"> <i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"> <i class="fab fa-linkedin"></i></a></li>
+
+            </span>
+          </ul>
+        </div>
+
+    </div>
+
+    <div onclick="closeNav()" id="overlay"></div>
+
+    <script>
+      function openNav() {
+      document.getElementById("sidebar").style.width = "300px";
+      document.querySelector('body').style.overflow = "hidden";
+      document.getElementById("overlay").style.display = "block";
+      document.getElementById("closebtn").style.visibility = "visible";
+      document.getElementById("opensidebarbtn").style.display ="none";
+      
+      }
+      
+      function closeNav() {
+      document.getElementById("sidebar").style.width = "0";
+      document.querySelector('body').style.overflow = "initial";
+      document.getElementById("overlay").style.display = "none";
+      document.getElementById("closebtn").style.visibility = "hidden";
+      document.getElementById("opensidebarbtn").style.display ="block";
+      }
+    </script>
+    <!-- *********End of Collapse Sidebar******** -->
+  
+
     <!-- Header -->
     <div class="sub-header">
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-xs-12">
-            <ul class="left-info">
+            <!-- <ul class="left-info">
               <li><a href="#"><i class="fa fa-clock-o"></i>Mon-Fri 09:00-17:00</a></li>
               <li><a href="#"><i class="fa fa-phone"></i>090-080-0760</a></li>
-            </ul>
+            </ul> -->
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 d-flex justify-content-end">
+            <ul class="left-info">
+<!--               <li><a href="#"><i class="fa fa-clock-o"></i>Mon-Fri 09:00-17:00</a></li>
+ -->              <li><a href="contact.html"> Contact</a></li>
+            </ul>
             <ul class="right-icons">
-              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-              <li><a href="#"><i class="fa fa-behance"></i></a></li>
+              <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
-    
+
     <header class="">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="index.html"><h2>Finance Business</h2></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <a class="" href="index.html"><img class="navbar-brand logo" src="assets/images/logo.jpg" alt=""></a>
+          <button id="opensidebarbtn" class="navbar-toggler" type="button" onclick="openNav()" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home
-                  <span class="sr-only">(current)</span>
+                <a class="nav-link" href="index.html">Accueil<br>
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About Us</a>
+              <li class="nav-item dropdowni">
+                <a class="nav-link" type="button">Que faisons nous?</a>
+                <div class="dropdowni-content1">
+                  <div class="rowi">
+                    <div class="col-md-12 columni">
+                        <h6 class="text-left">Technologies Financières</h6>
+                        <p>Lorem ipsum dolor set amet dit serpo ut demet </p>
+                        <a href="plateform.html">Notre Plateforme</a>
+                        <a href="materials.html">Matériels & Consommables</a>
+                        <br>
+                        <h6 class="text-left">Services</h6>
+                        <p>Lorem ipsum dolor set amet dit serpo ut demet </p>
+                        <a href="services.html">Déploiement & Support</a>
+                        <a href="services.html#monitoring-cybersecurity">Monitoring & Cybersécurité</a>
+                        <a href="services.html#technical-assistance">Assistance Technique</a>
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li class="nav-item dropdowni">
+                <a class="nav-link" href="#">Institutions Financières
+                </a>
+                <div class="dropdowni-content2">
+                  <div class="rowi">
+                    <div class="col-md-12 columni">
+                        <a href="institutions-fin.html">Institutions de Microfinance</a>
+                        <p>Lorem ipsum dolor set amet dit serpo ut demet </p>
+                        <a href="postal-banks.html"> Banques Postales</a>
+                        <p>Lorem ipsum dolor set amet dit serpo ut demet </p>
+                        <a href="assurances.html"> Sociétés d'Assurances</a>
+                        <p>Lorem ipsum dolor set amet dit serpo ut demet </p>
+                        <a href="regies.html"> Régies Financières</a>
+                        <p>Lorem ipsum dolor set amet dit serpo ut demet </p>
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              
+              <li class="nav-item active dropdowni">
+                <a class="nav-link" href="about.html">À Propos</a>
+                <div class="dropdowni-content3">
+                  <div class="rowi">
+                    <div class="col-md-12 columni">
+                        <a href="about.html#story" class="text-left">Notre Histoire</a>
+                        <small>Lorem ipsum dolor set amet dit serpo ut demet </small>
+                        <div class="d-flex">
+                          <a href="about.html#mission-vision-values">Mission - Vision - Valeurs</a>
+                        </div>
+
+                        <a href="about.html#team"> <i class="fa fa-envelop"></i> Notre Équipe</a>
+                        <a href="about.html#partners"> <i class="fa fa-envelop"></i> Nos Partenaires</a>
+                        <a href="about.html#policy"> <i class="fa fa-envelop"></i> Politique et Engagement</a>
+                        <br>
+                        <a href="contact.html"> Contact</a>
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="plateform.html">Réalisations</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="plateform.html">Our Services</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="contact.html">Contact Us</a>
-              </li>
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li> -->
             </ul>
           </div>
         </div>
@@ -95,8 +253,8 @@ https://templatemo.com/tm-545-finance-business
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h1>Contact Us</h1>
-            <span>feel free to send us a message now!</span>
+            <h1>Contact</h1>
+            <span>Contactez nous sans hésiter!</span>
           </div>
         </div>
       </div>
@@ -108,9 +266,10 @@ https://templatemo.com/tm-545-finance-business
           <div class="col-md-4">
             <div class="contact-item">
               <i class="fa fa-phone"></i>
-              <h4>Phone</h4>
-              <p>Vivamus ut tellus mi. Nulla nec cursus elit, id vulputate nec cursus augue.</p>
-              <a href="#">090-080-0760</a>
+              <h4>Telephone</h4>
+              <p>+229 61 00 60 60<br>
+                +229 96 18 09 10<br>
+                +229 96 11 45 55</p>
             </div>
           </div>
           <div class="col-md-4">
@@ -118,85 +277,60 @@ https://templatemo.com/tm-545-finance-business
               <i class="fa fa-envelope"></i>
               <h4>Email</h4>
               <p>Vivamus ut tellus mi. Nulla nec cursus elit, id vulputate nec cursus augue.</p>
-              <a href="#">info@company.com</a>
+              <a href="#">contact@bftgroup.co</a>
             </div>
           </div>
           <div class="col-md-4">
             <div class="contact-item">
               <i class="fa fa-map-marker"></i>
-              <h4>Location</h4>
-              <p>1020 New Mountain Street<br>Forest Park, FP 11220</p>
-              <a href="#">View on Google Maps</a>
+              <h4>Adresse</h4>
+              <p>BENIN FINTECH (BFT)<br>Immeuble Festival des Glaces,<br>Cadjehoun, 2e Etage . 04 BP 1148 Cotonou,</p>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="callback-form contact-us">
+    <div class="callback-form contact-us jumbotron mb-0">
       <div class="container">
-        <div class="row">
+        <div class="row d-flex justify-content-center">
           <div class="col-md-12">
             <div class="section-heading">
-              <h2>Send us a <em>message</em></h2>
+              <h2>Envoyer un <em>message</em></h2>
               <span>Suspendisse a ante in neque iaculis lacinia</span>
             </div>
           </div>
-          <div class="col-md-12">
+          <div class="col-md-8">
             <div class="contact-form">
               <form id="contact" action="" method="get">
                 <div class="row">
                   <div class="col-lg-4 col-md-12 col-sm-12">
                     <fieldset>
-                      <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="">
+                      <input name="name" type="text" class="form-control" id="name" placeholder="Votre Nom" required="">
                     </fieldset>
                   </div>
                   <div class="col-lg-4 col-md-12 col-sm-12">
                     <fieldset>
-                      <input name="email" type="text" class="form-control" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-Mail Address" required="">
+                      <input name="email" type="text" class="form-control" id="email" pattern="[^ @]*@[^ @]*" placeholder="Votre Email" required="">
                     </fieldset>
                   </div>
                   <div class="col-lg-4 col-md-12 col-sm-12">
                     <fieldset>
-                      <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject" required="">
+                      <input name="subject" type="text" class="form-control" id="subject" placeholder="Votre Entreprise" required="">
                     </fieldset>
                   </div>
                   <div class="col-lg-12">
                     <fieldset>
-                      <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
+                      <textarea name="message" rows="6" class="form-control" id="message" placeholder="Votre Message" required=""></textarea>
                     </fieldset>
                   </div>
                   <div class="col-lg-12">
                     <fieldset>
-                      <button type="submit" id="form-submit" class="filled-button">Send Message</button>
+                      <button type="submit" id="form-submit" class="filled-button">Envoyer</button>
                     </fieldset>
                   </div>
                 </div>
               </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="map">
-<!-- How to change your own map point
-	1. Go to Google Maps
-	2. Click on your location point
-	3. Click "Share" and choose "Embed map" tab
-	4. Copy only URL and paste it within the src="" field below
--->
-      <iframe src="https://maps.google.com/maps?q=Av.+Lúcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
-
-    <div class="partners contact-partners">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="owl-partners owl-carousel">
-              <div class="partner-item">
-                <img src="assets/images/client-01.png" alt="">
-              </div>
             </div>
           </div>
         </div>
@@ -209,7 +343,7 @@ https://templatemo.com/tm-545-finance-business
       <div class="container">
         <div class="row">
           <div class="col-md-3 footer-item">
-            <h4>Finance Business</h4>
+            <h4>BFT Group SAS</h4>
             <p>Vivamus tellus mi. Nulla ne cursus elit,vulputate. Sed ne cursus augue hasellus lacinia sapien vitae.</p>
             <ul class="social-icons">
               <li><a rel="nofollow" href="https://fb.com/templatemo" target="_blank"><i class="fa fa-facebook"></i></a></li>
@@ -228,17 +362,8 @@ https://templatemo.com/tm-545-finance-business
               <li><a href="#">Lacinia ac sapien</a></li>
             </ul>
           </div>
-          <div class="col-md-3 footer-item">
-            <h4>Additional Pages</h4>
-            <ul class="menu-list">
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">How We Work</a></li>
-              <li><a href="#">Quick Support</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3 footer-item last-item">
+          
+          <div class="col-md-6 footer-item last-item">
             <h4>Contact Us</h4>
             <div class="contact-form">
               <form id="contact footer-contact" action="" method="post">
@@ -275,9 +400,8 @@ https://templatemo.com/tm-545-finance-business
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <p>Copyright &copy; 2020 Financial Business Co., Ltd.
-            
-            - Design: <a rel="nofollow noopener" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
+            <p> </p>
+            <p>Copyright &copy; 2021 BFT Group</p>
           </div>
         </div>
       </div>

@@ -935,7 +935,6 @@ max-height:100%;
 }
 
 .contact-us {
-	background-color: #f7f7f7;
 	padding: 140px 0px;
 }
 
@@ -961,11 +960,10 @@ max-height:100%;
 	line-height: 40px;
 	display: inline-block;
 	padding: 0px 15px;
-	color: #6a6a6a;
+	color: #2e2e2e;
 	font-size: 13px;
 	text-transform: none;
 	box-shadow: none;
-	border: none;
 	margin-bottom: 35px;
 }
 
@@ -982,11 +980,10 @@ max-height:100%;
 	min-height: 120px;
 	display: inline-block;
 	padding: 15px;
-	color: #6a6a6a;
+	color: #313131;
 	font-size: 13px;
 	text-transform: none;
 	box-shadow: none;
-	border: none;
 	margin-bottom: 35px;
 }
 
@@ -1404,14 +1401,12 @@ footer .contact-form button.filled-button:hover {
 }
 
 .contact-information .contact-item {
-	padding: 60px 30px;
-	background-color: #f7f7f7;
 	text-align: center;
 }
 
 .contact-information .contact-item i {
 	color: #88bc49;
-	font-size: 48px;
+	font-size: 28px;
 	margin-bottom: 40px;
 }
 
