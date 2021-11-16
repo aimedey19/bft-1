@@ -636,7 +636,9 @@ ul.slick-dots {
 	background-color: #f9fafb
 }
 
-.service-item {
+
+
+.services .service-item {
 	min-height: 630px;
 	text-align: center;
 	background-color: #fff;
@@ -845,6 +847,7 @@ max-height:100%;
 
 .about-info .more-info-content h2, .about-info .more-info-content p {
 	color: #000 !important;
+	text-align: center;
 }
 
 
@@ -946,6 +949,7 @@ max-height:100%;
 
 .callback-form {
 	margin-top: 140px;
+	background-color: #4d5864;
 }
 
 .callback-form .contact-form {
