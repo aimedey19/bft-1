@@ -718,14 +718,6 @@ ul.slick-dots {
 	color: #000;
 }
 
-.count-area-content:hover {
-	transition: background-color 0.5s;
-	box-shadow: 3px 4px 8px 1px rgba(31,31,31,0.3);
-	-webkit-box-shadow: 3px 4px 8px 1px rgba(31,31,31,0.3);
-	-moz-box-shadow: 3px 4px 8px 1px rgba(31,31,31,0.3);
-	background-color: #000;
-}
-
 .fun-facts span {
 	text-transform: uppercase;
 	font-size: 15px;
@@ -757,13 +749,21 @@ ul.slick-dots {
 
 .count-area-content {
 	text-align: center;
-	background: url('../images/fun-facts-bg.jpg');
+	background-color: #2d3235;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 	padding: 25px 30px 35px 30px;
 	margin: 15px 0px;
+}
+
+.count-area-content:hover {
+	transition: background-color 0.5s;
+	box-shadow: 3px 4px 8px 1px rgba(31,31,31,0.3);
+	-webkit-box-shadow: 3px 4px 8px 1px rgba(31,31,31,0.3);
+	-moz-box-shadow: 3px 4px 8px 1px rgba(31,31,31,0.3);
+	background-color: #000;
 }
 
 .count-digita {
