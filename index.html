@@ -7,10 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="TemplateMo">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Manrope:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
     <title>BFT | Solutions de Finance Digitale pour l'Afrique</title>
 
+    <!-- MDB -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.css"
+    rel="stylesheet"
+    />
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -18,13 +23,52 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="assets/css/templatemo-finance-business.css">
     <link rel="stylesheet" href="assets/css/owl.css">
-<!--
 
-Finance Business TemplateMo
+    <!-- Font Awesome -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />
+    
+    <style>
+      .dropbtn {
+        font-size: 15px !important;
+        cursor: pointer;
+      }
 
-https://templatemo.com/tm-545-finance-business
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
 
--->
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        right: 0;
+        background-color: #ffffff;
+        width: 400px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      /* .dropdown-content a:hover {background-color: #f1f1f1;} */
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      .dropdown:hover .dropbtn {background-color: #ffffff;}
+    </style>
   </head>
 
   <body>
@@ -163,7 +207,7 @@ https://templatemo.com/tm-545-finance-business
     </div>
 
     <header class="">
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-lg" style="box-shadow: unset;">
         <div class="container">
           <a class="" href="index.html"><img class="navbar-brand logo" src="assets/images/logo.jpg" alt=""></a>
           <button id="opensidebarbtn" class="navbar-toggler" type="button" onclick="openNav()" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -172,12 +216,12 @@ https://templatemo.com/tm-545-finance-business
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="index.html">Accueil<br>
+                <a class="nav-link dropbtn" href="index.html">Accueil<br>
                 </a>
               </li>
-              <li class="nav-item dropdowni">
-                <a class="nav-link" type="button">Que faisons nous?</a>
-                <div class="dropdowni-content1">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropbtn" type="button">Que faisons nous?</a>
+                <div class="dropdown-content">
                   <div class="rowi">
                     <div class="col-md-12 columni">
                         <h6 class="text-left">Technologies Financières</h6>
@@ -195,10 +239,10 @@ https://templatemo.com/tm-545-finance-business
                 </div>
 
               </li>
-              <li class="nav-item dropdowni">
-                <a class="nav-link" href="#">Institutions Financières
+              <li class="nav-item dropdown">
+                <a class="nav-link dropbtn" href="#">Institutions Financières
                 </a>
-                <div class="dropdowni-content2">
+                <div class="dropdown-content">
                   <div class="rowi">
                     <div class="col-md-12 columni">
                         <a href="institutions-fin.html">Institutions de Microfinance</a>
@@ -215,9 +259,9 @@ https://templatemo.com/tm-545-finance-business
 
               </li>
               
-              <li class="nav-item dropdowni">
-                <a class="nav-link" href="about.html">À Propos</a>
-                <div class="dropdowni-content3">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropbtn" href="about.html">À Propos</a>
+                <div class="dropdown-content">
                   <div class="rowi">
                     <div class="col-md-12 columni">
                         <a href="about.html#story" class="text-left">Notre Histoire</a>
@@ -299,35 +343,35 @@ https://templatemo.com/tm-545-finance-business
     <!-- Banner Ends Here -->
 
     <!-- ======= Counts Section ======= -->
-    <div class="fun-facts m-0">
-      <div class="container">
+    <div class="fun-facts m-0 pt-0" style="background-color: #f7f7f7;">
+      <div class="px-2">
         <div class="row">
           <div class="col-md-12 align-self-center">
             <div class="row">
-              <a href="#" class="col-xl-3 col-lg-6 col-md-6 col-sm-6 my-2">
+              <a href="#" class="col-xl-3 col-lg-6 col-md-6 col-sm-6 mb-2">
                 <div class="count-digit-area-content">
-                  <i class="fa fa-users" ></i>
+                  <!-- <i class="fa fa-users" ></i> -->
                   <div class="count-digit">87.885</div>
                   <div class="count-digit-title">Utilisateurs<br> satisfaits</div>
                 </div>
               </a>
-              <a href="#" class="col-xl-3 col-lg-6 col-md-6 col-sm-6 my-2">
+              <a href="#" class="col-xl-3 col-lg-6 col-md-6 col-sm-6 mb-2">
                 <div class="count-digit-area-content">
-                  <i class="fa fa-piggy-bank" ></i>
+                  <!-- <i class="fa fa-piggy-bank" ></i> -->
                   <div class="count-digit">38.712.646.400</div>
                   <div class="count-digit-title">XOF d'Épargnes <br> collectés</div>
                 </div>
               </a>
-              <a href="#" class="col-xl-3 col-lg-6 col-md-6 col-sm-6 my-2">
+              <a href="#" class="col-xl-3 col-lg-6 col-md-6 col-sm-6 mb-2">
                 <div class="count-digit-area-content">
-                  <i class="fa fa-credit-card" ></i>
+                  <!-- <i class="fa fa-credit-card" ></i> -->
                   <div class="count-digit">3.196.079.844</div>
                   <div class="count-digit-title">XOF de Crédits <br> octroyés</div>
                 </div>
               </a>
-              <a href="#" class="col-xl-3 col-lg-6 col-md-6 col-sm-6 my-2">
+              <a href="#" class="col-xl-3 col-lg-6 col-md-6 col-sm-6 mb-2">
                 <div class="count-digit-area-content">
-                  <i class="fa fa-headset" ></i>
+                  <!-- <i class="fa fa-headset" ></i> -->
                   <div class="count-digit">48080</div>
                   <div class="count-digit-title">Heures<br> de Support</div>
                 </div>
@@ -337,6 +381,58 @@ https://templatemo.com/tm-545-finance-business
         </div>
       </div>
     </div>
+
+    <section>
+      <div class="container">
+        <div class="section-header">
+          <h2>Nos Solutions <span>Fintech</span></h2>
+        </div>
+        <div class="row solutions-grid">
+          <div class="col-4 px-3" style="margin: 35px 0 !important;">
+            <h4 class="mb-4">Smart Saving</h4>
+            <p class="text-justify">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, architecto minima adipisci a dolor nihil aliquam quibusdam alias ut hic.
+            </p>
+            <a href="about.html" class="btn btn-light mt-4">En savoir plus</a>
+          </div>
+          <div class="col-4 px-3" style="margin: 35px 0 !important;">
+            <h4 class="mb-4">Smart Pay</h4>
+            <p class="text-justify">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, architecto minima adipisci a dolor nihil aliquam quibusdam alias ut hic.
+            </p>
+            <a href="about.html" class="btn btn-light mt-4">En savoir plus</a>
+          </div>
+          <div class="col-4 px-3" style="margin: 35px 0 !important;">
+            <h4 class="mb-4">Smart Credit</h4>
+            <p class="text-justify">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, architecto minima adipisci a dolor nihil aliquam quibusdam alias ut hic.
+            </p>
+            <a href="about.html" class="btn btn-light mt-4">En savoir plus</a>
+          </div>
+          <div class="col-4 px-3" style="margin: 35px 0 !important;">
+            <h4 class="mb-4">Smart Money</h4>
+            <p class="text-justify">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, architecto minima adipisci a dolor nihil aliquam quibusdam alias ut hic.
+            </p>
+            <a href="about.html" class="btn btn-light mt-4">En savoir plus</a>
+          </div>
+          <div class="col-4 px-3" style="margin: 35px 0 !important;">
+            <h4 class="mb-4">Smart Agri</h4>
+            <p class="text-justify">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, architecto minima adipisci a dolor nihil aliquam quibusdam alias ut hic.
+            </p>
+            <a href="about.html" class="btn btn-light mt-4">En savoir plus</a>
+          </div>
+          <div class="col-4 px-3" style="margin: 35px 0 !important;">
+            <h4 class="mb-4">Smart Tax</h4>
+            <p class="text-justify">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, architecto minima adipisci a dolor nihil aliquam quibusdam alias ut hic.
+            </p>
+            <a href="about.html" class="btn btn-light mt-4">En savoir plus</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!--div class="request-form">
       <div class="container">
@@ -352,7 +448,7 @@ https://templatemo.com/tm-545-finance-business
       </div>
     </div-->
 
-    <div class="fun-facts">
+    <!-- <div class="fun-facts">
       <div class="container">
         <div class="row">
           <div class="col-md-5">
@@ -394,7 +490,7 @@ https://templatemo.com/tm-545-finance-business
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Our services -->
     <div class="more-info about-info expertise mt-0">
@@ -409,7 +505,7 @@ https://templatemo.com/tm-545-finance-business
           <div class="col-md-12 mb-5">
             <div class="more-info-content">
               <div class="row">
-                <div class="col-md-6 order-md-1 order-2 align-self-center">
+                <div class="col-md-6  order-md-1 order-2align-self-center">
                   <div class="right-content">
                     <h2>FINANCE DIGITALE</h2>
                     <p>Nous offrons des solutions de finance digitale adaptées aux réalités de l’Afrique afin de
@@ -701,7 +797,13 @@ https://templatemo.com/tm-545-finance-business
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+
+    <!-- MDB -->
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.js"
+    ></script>
 
     <!-- Additional Scripts -->
     <script src="assets/js/custom.js"></script>
