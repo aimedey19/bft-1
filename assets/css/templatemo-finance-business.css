@@ -7,7 +7,7 @@ https://templatemo.com/tm-545-finance-business
 */
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Manrope', sans-serif;
   overflow-x: hidden;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -1495,7 +1495,7 @@ footer .contact-form button.filled-button:hover {
 	margin-top: 30px;
 }
 .tabs-content p {
-	font-family: Lato;
+	font-family: Manrope;
 	font-size: 1rem;
 	color: rgb(87, 87, 87);
 	margin-bottom: 0px;
