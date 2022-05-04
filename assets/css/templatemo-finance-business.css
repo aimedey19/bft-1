@@ -58,11 +58,13 @@ a.filled-button {
 	padding: 13px 27px;
 	display: inline-block;
 	transition: all 0.3s;
+	border: 2px solid #88bc49;
 }
 
 a.filled-button:hover {
 	background-color: #fff;
-	color: #88bc49;
+	border: 2px solid #88bc49;
+	color: #2f3945 !important;
 }
 
 a.border-button {
@@ -732,11 +734,11 @@ ul.slick-dots {
 
 .solutions-section {
 	/*background: #f1fef4;*/
-	margin-bottom: 100px;
+	margin: 80px 0;
 	padding-bottom: 0 !important;
 }
 
-.solutions-section img {
+.solutions-section-img {
 	height: 360px;
 	width: auto;
 	max-width: unset !important;
@@ -886,6 +888,15 @@ section .solutions-grid .btn-light:hover {
     color: #2d3235;
     font-weight: 600;
     font-size: 29px;
+}
+
+.count-digit:after {
+	content: '';
+	display: block;
+	width: 30%;
+	margin: auto;
+	padding: 5px 0 !important;
+	border-bottom: 3px solid #88bc49 !important;
 }
 
 .count-digit-area-content {
