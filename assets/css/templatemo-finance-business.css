@@ -250,9 +250,13 @@ a.border-button:hover {
 
 /* Header Style */
 
+.mini-header {
+	min-height: 300px;
+}
+
 .mini-header h1, .mini-header h1 span{
 	font-size: 40px !important;
-	text-align: left !important;
+	text-align: left;
 	text-transform: none;
 }
 
@@ -285,7 +289,7 @@ header .navbar {
 	padding: 20px 0px;
 }
 .background-header .navbar {
-	padding: 10px 0px;
+	padding: 0 0 !important;
 }
 .background-header {
 	top: 0;
@@ -475,15 +479,15 @@ header .navbar {
 }
 
 .Modern-Slider .item-1 .img-fill {
-	background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(https://res.cloudinary.com/aime/image/upload/v1651570009/BFT_ENROLEMNT_BOUTIQUE_-_29_avril_2022_-_39_qhpuzm.jpg);
+	background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url(https://res.cloudinary.com/aime/image/upload/v1651570009/BFT_ENROLEMNT_BOUTIQUE_-_29_avril_2022_-_39_qhpuzm.jpg);
 }
 
 .Modern-Slider .item-2 .img-fill {
-	background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),url(../images/hero-2.jpg);
+	background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),url(https://res.cloudinary.com/aime/image/upload/v1650993501/P1080187_v6rh8g.jpg);
 }
 
 .Modern-Slider .item-3 .img-fill {
-	background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),url(https://res.cloudinary.com/aime/image/upload/v1650994134/P1080130_gm5wmt.jpg);
+	background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),url(https://res.cloudinary.com/aime/image/upload/v1650994134/P1080130_gm5wmt.jpg);
 }
 
 .Modern-Slider .NextArrow{
@@ -688,14 +692,14 @@ ul.slick-dots {
 /*** Section part ***/
 .section-part {
 	padding: 50px 15px;
-	background-color: #f9fafb
+	/*background-color: #f9fafb*/
 }
 
 .section-part .service-item {
 	padding-top: 35px;
 	text-align: center;
 	background-color: #fff;
-	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.152);
+	box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.07);
 }
 
 .section-part .service-item img {
@@ -710,14 +714,14 @@ ul.slick-dots {
 }
 
 .section-part .service-item .down-content h4 {
-	font-size: 26px;
-	font-weight: 500;
-	/*letter-spacing: 0.25px;*/
+	font-size: 20px;
+	font-weight: 600;
 	margin-bottom: 15px;
+	color: #2d3235;
 }
 
 .section-part .service-item .down-content p {
-	text-align: justify;
+	text-align: left;
 	min-height: 150px !important;
 }
 
@@ -738,8 +742,8 @@ ul.slick-dots {
 	padding-bottom: 0 !important;
 }
 
-.solutions-section-img {
-	height: 360px;
+.solutions-grid-img {
+	height: 360px !important;
 	width: auto;
 	max-width: unset !important;
 	margin-top: 60px;
@@ -818,7 +822,7 @@ section .solutions-grid .btn-light:hover {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-	padding: 140px 0 0 0;
+	padding: 100px 0;
 	margin-bottom: 100px;
 	color: #000;
 }
@@ -1370,7 +1374,6 @@ footer .contact-form button.filled-button:hover {
 
 .page-heading {
 	text-align: center;
-	/* background-image: url(../images/page-heading-bg.jpg); */
 	background-color: #2f3945;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -1392,7 +1395,7 @@ footer .contact-form button.filled-button:hover {
 	text-transform: uppercase;
 	/*letter-spacing: 1px;*/
 	color: #fff;
-	display: block;
+	/*display: block;*/
 }
 
 
@@ -2071,3 +2074,25 @@ clear: both;
 	/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 	@media screen and (max-height: 450px) {
 	}
+
+
+#monitoring-cybersecurity h2, #monitoring-cybersecurity p {
+	color: #fff !important;
+}
+
+#monitoring-cybersecurity .special-card {
+	background-color: #F3F3F4;
+	color: #000000;
+	padding: 25px 30px;
+	margin: 20px 0;
+	width: 100%;
+	max-height: 100%;
+}
+
+#monitoring-cybersecurity .special-card p, #monitoring-cybersecurity .special-card h6 {
+	color: #000000 !important;
+}
+
+#monitoring-cybersecurity .special-card img {
+	height: 80px !important;
+}
